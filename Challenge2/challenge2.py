@@ -1,6 +1,11 @@
 import requests
+import os
 
-api_key_token="FZEF4I36DBDVXF674MVHEWX3CEDMZ96N3U"
+# dont forget to set your api key 
+# export API_KEY="xxxx"
+api_key_token = os.environ.get("API_KEY")
+
+
 action="eth_getTransactionReceipt"
 module="proxy"
 
